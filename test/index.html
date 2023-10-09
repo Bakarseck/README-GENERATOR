@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div id="container" class="container">
+        <!-- FORM SECTION -->
+        <div class="toggle-button">
+            <button id="toggle-mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-moon" viewBox="0 0 16 16">
+                    <path
+                        d="M10.282 1.573A7.5 7.5 0 0 1 14.426 14.426a.5.5 0 0 1-.797-.605 6.5 6.5 0 0 0-11.158-7.553.5.5 0 0 1-.605-.797 7.5 7.5 0 0 1 12.94-.537zM8 0a8 8 0 1 0 .001 16.001A8 8 0 0 0 8 0z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-sun" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0V1a1 1 0 0 1 1-1zm0 14a1 1 0 0 1-1-1v-2a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1zm7-7a1 1 0 0 1-1 1h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1zm-14 0a1 1 0 0 1 1 1h2a1 1 0 0 1 0-2H1a1 1 0 0 1-1 1z" />
+                    <path fill-rule="evenodd"
+                        d="M8 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm0-1a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM8 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm4-4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM4 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm9.293 3.293a1 1 0 1 0 1.414-1.414l-2-2a1 1 0 1 0-1.414 1.414l2 2z" />
+                    <path fill-rule="evenodd"
+                        d="M10.293 4.293a1 1 0 1 0-1.414-1.414l-2 2a1 1 0 0 0 1.414 1.414l2-2z" />
+                </svg>
+            </button>
+        </div>
+        <div class="row">
+            <!-- SIGN UP -->
+            <div class="col align-items-center flex-col sign-up">
+                <div class="form-wrapper align-items-center">
+                    <div class="form sign-up">
+                        <div class="input-group">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bx-mail-send'></i>
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="password" placeholder="Confirm password">
+                        </div>
+                        <button>
+                            Sign up
+                        </button>
+                        <p>
+                            <span>
+                                Already have an account?
+                            </span>
+                            <b onclick="toggle()" class="pointer">
+                                Sign in here
+                            </b>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- END SIGN UP -->
+            <!-- SIGN IN -->
+            <div class="col align-items-center flex-col sign-in">
+                <div class="form-wrapper align-items-center">
+                    <div class="form sign-in">
+                        <div class="input-group">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <button>
+                            Sign in
+                        </button>
+                        <p>
+                            <b>
+                                Forgot password?
+                            </b>
+                        </p>
+                        <p>
+                            <span>
+                                Don't have an account?
+                            </span>
+                            <b onclick="toggle()" class="pointer">
+                                Sign up here
+                            </b>
+                        </p>
+                    </div>
+                </div>
+                <div class="form-wrapper">
+
+                </div>
+            </div>
+            <!-- END SIGN IN -->
+        </div>
+        <!-- END FORM SECTION -->
+        <!-- CONTENT SECTION -->
+        <div class="row content-row">
+            <!-- SIGN IN CONTENT -->
+            <div class="col align-items-center flex-col">
+                <div class="text sign-in">
+                    <h2>
+                        Welcome to Our 01 forum
+                    </h2>
+
+                </div>
+                <div class="img sign-in">
+
+                </div>
+            </div>
+            <!-- END SIGN IN CONTENT -->
+            <!-- SIGN UP CONTENT -->
+            <div class="col align-items-center flex-col">
+                <div class="img sign-up">
+
+                </div>
+                <div class="text sign-up">
+                    <h2>
+                        Join with us
+                    </h2>
+
+                </div>
+            </div>
+            <!-- END SIGN UP CONTENT -->
+        </div>
+        <!-- END CONTENT SECTION -->
+    </div>
+
+    <script>
+        let container = document.getElementById('container')
+        const toggleButton = document.getElementById('toggle-mode');
+        const body = document.body;
+
+        toggle = () => {
+            container.classList.toggle('sign-in')
+            container.classList.toggle('sign-up')
+        }
+
+        setTimeout(() => {
+            container.classList.add('sign-in')
+        }, 200)
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+
+</html>
